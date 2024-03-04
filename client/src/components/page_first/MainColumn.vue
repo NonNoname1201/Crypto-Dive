@@ -1,6 +1,13 @@
 <script setup>
   import Logo from '../icons/page_first/IconLogo.vue';
   import Star from '../icons/page_first/IconStar.vue';
+
+  export default {
+    components: {
+      Logo,
+      Star,
+    },
+  };
 </script>
 
 <template>

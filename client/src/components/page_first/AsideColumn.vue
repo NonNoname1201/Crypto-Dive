@@ -1,5 +1,10 @@
 <script setup>
   import Planet from '../icons/page_first/IconPlanet.vue';
+  export default {
+    components: {
+      Planet,
+    },
+  };
 </script>
 
 <template>
