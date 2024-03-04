@@ -5,7 +5,7 @@
 <template>
   <section class="header">
     <h1>Kup subskypcję w najlepszej cenie</h1>
-    <h3>Cena subskrypcji rośnie z każdą większa aktualizacją</h3>
+    <h4>Cena subskrypcji rośnie z każdą większa aktualizacją</h4>
   </section>
   <section class="description-container">
     <div class="description-item">
@@ -73,8 +73,7 @@
 
 .description-item {
   flex: 1;
-
-  margin: 0 5vw 5vw 5vw;
+  margin: 0 3vw 3vw 3vw;
   border: 1px solid #333;
 }
 </style>
