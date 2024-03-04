@@ -1,6 +1,12 @@
 <script setup>
   import MainColumn from "@/components/page_first/MainColumn.vue";
   import AsideColumn from "@/components/page_first/AsideColumn.vue";
+  export default {
+    components: {
+      MainColumn,
+      AsideColumn,
+    },
+  };
 </script>
 
 <template>
