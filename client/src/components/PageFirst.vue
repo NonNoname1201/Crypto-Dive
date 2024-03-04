@@ -26,4 +26,6 @@ const components = {
     display: flex;
     text-align: center;
   }
+
+
 </style>

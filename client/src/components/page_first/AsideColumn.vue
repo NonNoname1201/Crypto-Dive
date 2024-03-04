@@ -22,5 +22,6 @@ const components = {
   }
 
   margin-left: -500px;
+  z-index: 0;
 }
 </style>
