@@ -12,22 +12,34 @@ const components = {
 <template>
   <section class="first-page">
     <Logo />
-    <h1 class="Intro-text">CRYPTO Dive - To <br><span class="green-text">pierwszy</span> projrekt <br>edukacji <span class="blue-text">kryptowalutowej<br></span> w Polsce!  <Star/></h1>
+    <h1 class="Intro-text">CRYPTO Dive - To <br><span class="green-text">pierwszy</span> projrekt <br>edukacji <span class="blue-text">kryptowalutowej<br></span> w Polsce!  <Star class="star"/></h1>
     <div class="gradient-line"></div>
     <button class="entry-button"><a href="https://discord.gg/ZXbAnv8SVC">Rozpocząć</a></button>
   </section>
 </template>
 
 <style scoped>
+.entry-button {
+  width: 285px;
+  height: 79px;
+  border: 5px solid white;
+  background-color: #000000;
+  border-radius: 15px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
 .first-page {
   h1 {
     font-size: 50px;
-
     font-weight: 800;
     word-wrap: break-word;
   }
 
-  Star {
+  .star {
     height: 30px;
   }
 
