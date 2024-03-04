@@ -25,6 +25,8 @@ const components = {
 <style scoped>
 
 .entry-button {
+  margin-top: 46px;
+  margin-left: 46px;
   width: 150px;
   height: 40px;
   border: 4px solid white;
@@ -64,6 +66,7 @@ const components = {
     font-size: 50px;
     font-weight: 800;
     word-wrap: break-word;
+    margin-left: 46px;
   }
 
   .star {
@@ -81,10 +84,12 @@ const components = {
   }
 
   .gradient-line {
-    width: 30vw;
+    width: 25vw;
     height: 15px;
     background: linear-gradient(270deg, #7000FF 0%, #0075FF 49%, #33FF00 100%);
     border-radius: 12px;
+    margin-top: 20px;
+    margin-left: 46px;
   }
   z-index: 1;
 }

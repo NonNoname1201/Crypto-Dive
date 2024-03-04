@@ -20,8 +20,9 @@ const components = {
   svg {
     height: 100vh;
   }
-
-  margin-left: -500px;
+  margin-right: -200px;
+  position: absolute;
+  right: 0;
   z-index: 0;
 }
 </style>
