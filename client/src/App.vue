@@ -12,7 +12,8 @@ const components = {
 </script>
 
 <template>
-<FirstPage />
+  <FirstPage />
+  <ThirdPage />
 </template>
 
 <style scoped>
