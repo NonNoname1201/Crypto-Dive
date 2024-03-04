@@ -1,10 +1,10 @@
 <script setup>
-  import Planet from '../icons/page_first/IconPlanet.vue';
-  export default {
-    components: {
-      Planet,
-    },
-  };
+import Planet from '../icons/page_first/IconPlanet.vue';
+import { defineComponent } from 'vue';
+
+const components = {
+  Planet,
+};
 </script>
 
 <template>
@@ -17,7 +17,7 @@
 .aside-first-page {
   height: 100vh;
 
-  Planet {
+  svg {
     height: 100vh;
   }
 
