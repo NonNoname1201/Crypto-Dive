@@ -33,3 +33,17 @@ a,
     padding: 0 2rem;
   }
 }
+
+/* Uncomment the following code to enable Montserrat font and hide the scrollbar */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+ */
