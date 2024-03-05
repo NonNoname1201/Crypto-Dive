@@ -10,16 +10,16 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
 <div class="Content">
   <div class="core"><IconCore/></div>
   <div class="icon-container">
-    <div class="left-top-icon icon">
+    <div class="icon left-top-icon">
       <IconNews/>
     </div>
     <div class="right-top-icon icon">
       <IconMoney/>
     </div>
-    <div class="right-bottom-icon icon">
+    <div class="left-bottom-icon icon">
       <IconMember/>
     </div>
-    <div class="left-bottom-icon icon">
+    <div class="right-bottom-icon icon">
       <IconStudent/>
     </div>
   </div>
@@ -34,7 +34,6 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   align-items: center;
   width: 100%;
   height: 80vh;
-  z-index: -1;
 }
 
 .core {
@@ -43,16 +42,28 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   svg {
     width: 100%;
     height: 100%;
+    background: transparent;
   }
+  background: transparent;
 }
 
 .icon-container {
   position: absolute;
   background: transparent;
-
+  width: 100%;
+  height: 100%;
 }
 
 .icon{
+  --svg-size: 20%;
+  --move-up: 28vh;
+  --move-left: 22vw;
+  position: absolute;
+  top: calc(50% - var(--move-up));
+  left: calc(50% - var(--move-left));
+  width: var(--svg-size);
+  height: var(--svg-size);
+  transform: translate(-50%, -50%);
   svg {
     width: 100%;
     height: 100%;
@@ -62,28 +73,20 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
 }
 
 .left-top-icon{
-  position: relative;
-  bottom: 28vh;
-  right: 22vw;
-  z-index: 1;
+  --move-up: 28vh;
+  --move-left: 22vw;
 }
 
 .right-top-icon{
-  position: relative;
-  bottom: 28vh;
-  left: 22vw;
-  z-index: 2;
+  --move-up: 28vh;
+  --move-left: -22vw;
 }
 .right-bottom-icon{
-  position: relative;
-  top: 28vh;
-  left: 22vw;
-  z-index: 3;
+  --move-up: -28vh;
+  --move-left: -22vw;
 }
 .left-bottom-icon{
-  position: relative;
-  top: -28vh;
-  left: -22vw;
-  z-index: 4;
+  --move-up: -28vh;
+  --move-left: 22vw;
 }
 </style>
