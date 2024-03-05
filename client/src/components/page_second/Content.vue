@@ -13,13 +13,13 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
     <div class="icon left-top-icon">
       <IconNews/>
     </div>
-    <div class="right-top-icon icon">
+    <div class="icon right-top-icon">
       <IconMoney/>
     </div>
-    <div class="left-bottom-icon icon">
+    <div class="icon left-bottom-icon">
       <IconMember/>
     </div>
-    <div class="right-bottom-icon icon">
+    <div class="icon right-bottom-icon">
       <IconStudent/>
     </div>
   </div>
@@ -76,7 +76,6 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   --move-up: 28vh;
   --move-left: 22vw;
 }
-
 .right-top-icon{
   --move-up: 28vh;
   --move-left: -22vw;
@@ -89,4 +88,5 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   --move-up: -28vh;
   --move-left: 22vw;
 }
+
 </style>
