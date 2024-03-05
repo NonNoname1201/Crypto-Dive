@@ -29,10 +29,10 @@ export default {
 
 .pageName {
   font-size: 50px;
-  font-weight: 800;
-  line-height: 1.3;
+  font-weight: 700;
+  line-height: 61px;
 
-  padding-bottom: 8px;
+  padding-bottom: 14px;
   background: linear-gradient(270deg, #BD00FF 0%, #0047FF 53%, #31FA0B 100%);
   border: 0;
   position: relative;

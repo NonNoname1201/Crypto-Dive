@@ -9,11 +9,19 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
 <template>
 <div class="Content">
   <div class="core"><IconCore/></div>
-  <div class="images">
-    <IconNews/>
-    <IconMoney/>
-    <IconMember/>
-    <IconStudent/>
+  <div class="icon-container">
+    <div class="left-top-icon icon">
+      <IconNews/>
+    </div>
+    <div class="right-top-icon icon">
+      <IconMoney/>
+    </div>
+    <div class="right-bottom-icon icon">
+      <IconMember/>
+    </div>
+    <div class="left-bottom-icon icon">
+      <IconStudent/>
+    </div>
   </div>
 </div>
 
@@ -30,7 +38,6 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
 }
 
 .core {
-  margin: 0 auto;
   width: 60%;
   height: 100%;
   svg {
@@ -39,21 +46,44 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   }
 }
 
-.images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 160px;
-  width: 79%;
-  height: 90%;
-  margin: 0;
+.icon-container {
+  position: absolute;
+  background: transparent;
+
+}
+
+.icon{
   svg {
     width: 100%;
     height: 100%;
     background: transparent;
   }
-
-  position: absolute;
   background: transparent;
+}
+
+.left-top-icon{
+  position: relative;
+  bottom: 28vh;
+  right: 22vw;
+  z-index: 1;
+}
+
+.right-top-icon{
+  position: relative;
+  bottom: 28vh;
+  left: 22vw;
+  z-index: 2;
+}
+.right-bottom-icon{
+  position: relative;
+  top: 28vh;
+  left: 22vw;
+  z-index: 3;
+}
+.left-bottom-icon{
+  position: relative;
+  top: -28vh;
+  left: -22vw;
+  z-index: 4;
 }
 </style>
