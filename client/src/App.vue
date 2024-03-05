@@ -1,7 +1,7 @@
 <script setup>
-import FirstPage from '@/components/PageFirst.vue';
-import SecondPage from '@/components/PageSecond.vue';
-import ThirdPage from '@/components/PageThird.vue';
+import PageFirst from '@/components/PageFirst.vue';
+import PageSecond from '@/components/PageSecond.vue';
+import PageThird from '@/components/PageThird.vue';
 import { defineComponent } from 'vue';
 
 const components = {
@@ -11,9 +11,28 @@ const components = {
 };
 </script>
 
+<script>
+export default {
+  data() {
+    return {
+      title: 'Crypto Dive'
+    }
+  },
+  mounted() {
+    document.title = this.title;
+  }
+}
+</script>
+
 <template>
-  <FirstPage />
-  <ThirdPage />
+  <header>
+  </header>
+
+  <main>
+    <PageFirst />
+    <PageSecond/>
+    <PageThird />
+  </main>
 </template>
 
 <style scoped>
