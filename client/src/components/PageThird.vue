@@ -1,5 +1,5 @@
 <script setup>
-import Plans from "@/components/page_third/Plans.vue";
+import Plans from "@/components/page_third/SubscriptionPlans.vue";
 import { defineComponent } from 'vue';
 
 const components = {
