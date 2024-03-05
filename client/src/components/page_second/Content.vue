@@ -4,10 +4,12 @@ import IconNews from "@/components/icons/page_second/IconNews.vue";
 import IconMoney from "@/components/icons/page_second/IconMoney.vue";
 import IconMember from "@/components/icons/page_second/IconMember.vue";
 import IconStudent from "@/components/icons/page_second/IconStudent.vue";
+import BgText from "@/components/icons/page_second/BgText.vue";
 </script>
 
 <template>
 <div class="Content">
+  <div class="bg-text"><BgText/></div>
   <div class="core"><IconCore/></div>
   <div class="icon-container">
     <div class="icon left-top-icon">
@@ -34,6 +36,18 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
   align-items: center;
   width: 100%;
   height: 80vh;
+}
+
+.bg-text {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  svg {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  background: transparent;
 }
 
 .core {
@@ -73,19 +87,19 @@ import IconStudent from "@/components/icons/page_second/IconStudent.vue";
 }
 
 .left-top-icon{
-  --move-up: 28vh;
+  --move-up: 25vh;
   --move-left: 22vw;
 }
 .right-top-icon{
-  --move-up: 28vh;
+  --move-up: 25vh;
   --move-left: -22vw;
 }
 .right-bottom-icon{
-  --move-up: -28vh;
+  --move-up: -26vh;
   --move-left: -22vw;
 }
 .left-bottom-icon{
-  --move-up: -28vh;
+  --move-up: -26vh;
   --move-left: 22vw;
 }
 
