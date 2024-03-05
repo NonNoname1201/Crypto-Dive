@@ -12,7 +12,7 @@ const components = {
 <template>
   <section class="first-page">
     <Logo />
-    <h1 class="Intro-text">CRYPTO Dive - To <br><span class="green-text">pierwszy</span> projrekt <br>edukacji <span class="blue-text">kryptowalutowej<br></span> w Polsce!  <Star class="star"/></h1>
+    <h1 class="Intro-text">CRYPTO DIVE - To <br><span class="green-text">pierwszy</span> projrekt <br>edukacji <span class="blue-text">kryptowalutowej<br></span> w Polsce!  <Star class="star"/></h1>
     <div class="gradient-line"></div>
     <label>
       <button class="entry-button">
@@ -67,20 +67,24 @@ const components = {
     font-weight: 800;
     word-wrap: break-word;
     margin-left: 46px;
+    background: transparent;
   }
 
   .star {
     height: 30px;
+    background: transparent;
   }
 
   text-align: left;
 
   .green-text {
     color: #51FF82;
+    background: transparent;
   }
 
   .blue-text {
     color: #2395FF;
+    background: transparent;
   }
 
   .gradient-line {
@@ -91,6 +95,7 @@ const components = {
     margin-top: 20px;
     margin-left: 46px;
   }
+  background: transparent;
   z-index: 1;
 }
 </style>
