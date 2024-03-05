@@ -10,7 +10,7 @@ const components = {
 </script>
 
 <template>
-  <div class="Page-first">
+  <div class="Page-first page">
     <MainColumn />
     <AsideColumn />
   </div>
@@ -18,14 +18,7 @@ const components = {
 
 <style scoped>
   .Page-first {
-    background: black;
-    background-size: auto 100vh;
-    width: 100%;
-    min-height: 100vh;
-    color: white;
     display: flex;
     text-align: center;
   }
-
-
 </style>
