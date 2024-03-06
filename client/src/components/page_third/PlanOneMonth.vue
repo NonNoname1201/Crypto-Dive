@@ -46,10 +46,15 @@ const components = {
 .description {
   border-top: 3px solid #434343;
   border-bottom: 3px solid #434343;
+  font-weight: 500;
+  font-size: 17px;
   height: 55%;
   padding: 25px 28px;
   ul {
     list-style-image: url('@/components/icons/page_third/plan_list_icon.svg');
+    li {
+      padding-bottom: 4px;
+    }
   }
 }
 
@@ -62,13 +67,14 @@ const components = {
   justify-content: space-between;
   align-items: center;
   .price {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
   }
 
   .button-style {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
+    padding: 5px 30px;
     border: 5px solid #434343;
     border-radius: 10px;
   }

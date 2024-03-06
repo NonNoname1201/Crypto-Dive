@@ -58,10 +58,14 @@ const components = {
   flex-wrap: wrap;
 }
 
+.description-item:nth-child(1) {
+  border: 6px solid #434343;
+  border-radius: 10px;
+}
+
 .description-item {
   flex: 1;
   margin: 0 3vw 3vw 3vw;
-  border: 1px solid #333;
   color: #fff;
   min-width: 250px;
   max-width: 350px;
