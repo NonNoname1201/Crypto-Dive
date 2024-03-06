@@ -8,7 +8,9 @@ const components = {
 </script>
 
 <template>
-  <Plans />
+  <div class="Page-third">
+    <Plans />
+  </div>
 </template>
 
 <style scoped>

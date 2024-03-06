@@ -9,17 +9,29 @@
     </div>
     <div class="description">
       <ul>
-        <li>3x w tygodniu</li>
-        <li>3x w weekend</li>
-        <li>3x w miesiącu</li>
+        <li>Wszystkie korzyści wynikające z subskrypcji Dive Club VIP</li>
+        <li>Dożywotna subskrypcja</li>
+        <li>Ekskluzywne spotkania</li>
+        <li>Bonus <span class="bold-number">70</span>% za każdego poleconego</li>
       </ul>
     </div>
     <div class="price">
-      2999 ZŁ
+      <p>2999 ZŁ</p>
+      <button class="button-style"><a>Kupić</a></button>
     </div>
   </div>
 </template>
 
 <style scoped>
+.title {
+  border-bottom: 6px solid #434343;
+}
 
+.description{
+  border-bottom: 6px solid #434343;
+}
+
+.price{
+  height: 25%;
+}
 </style>

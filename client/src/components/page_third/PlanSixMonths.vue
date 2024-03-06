@@ -9,17 +9,31 @@
     </div>
     <div class="description">
       <ul>
-        <li>2x w tygodniu</li>
-        <li>2x w weekend</li>
-        <li>2x w miesiącu</li>
+        <li>Wczesny dostęp do wszystkich aktywności</li>
+        <li>Bonus <span class="bold-number">60</span>% za każdego poleconego</li>
+        <li>Dostęp do prywatwych maretyli</li>
+        <li>Spersonalizowane wsparcie</li>
+        <li>Wyłączna rola</li>
+        <li>Wczesny dostęp do wszystich nowych produktów</li>
       </ul>
     </div>
     <div class="price">
-      999 ZŁ
+      <p>999 ZŁ</p>
+      <button class="button-style"><a>Kupić</a></button>
     </div>
   </div>
 </template>
 
 <style scoped>
+.title {
+  border-bottom: 6px solid #434343;
+}
 
+.description{
+  border-bottom: 6px solid #434343;
+}
+
+.price{
+  height: 25%;
+}
 </style>
