@@ -1,106 +1,44 @@
 <script setup>
-import IconCore from "@/components/icons/page_second/IconCore.vue";
-import IconNews from "@/components/icons/page_second/IconNews.vue";
-import IconMoney from "@/components/icons/page_second/IconMoney.vue";
-import IconMember from "@/components/icons/page_second/IconMember.vue";
-import IconStudent from "@/components/icons/page_second/IconStudent.vue";
-import BgText from "@/components/icons/page_second/BgText.vue";
+import { ref, onMounted, onUnmounted } from 'vue';
+import PageThin from "@/components/page_second/PageThin.vue";
+import PageMedium from "@/components/page_second/PageMedium.vue";
+import PageWide from "@/components/page_second/PageWide.vue";
+
+const currentPage = ref(null);
+let divHeight = ref(0);
+
+const updateCurrentPage = () => {
+  const width = window.innerWidth;
+  divHeight.value = document.querySelector('.content').clientHeight;
+  const height = divHeight.value;
+  //this div
+
+  if (width/height <= 670.0/700) {
+    currentPage.value = PageThin;
+  } else if (width/height <= 1024.0/700) {
+    currentPage.value = PageMedium;
+  } else {
+    currentPage.value = PageWide;
+  }
+};
+
+onMounted(() => {
+  divHeight.value = document.querySelector('.content').clientHeight;
+  window.addEventListener('resize', updateCurrentPage);
+  updateCurrentPage();
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateCurrentPage);
+});
 </script>
 
 <template>
-<div class="Content">
-  <div class="bg-text"><BgText/></div>
-  <div class="core"><IconCore/></div>
-  <div class="icon-container">
-    <div class="icon left-top-icon">
-      <IconNews/>
-    </div>
-    <div class="icon right-top-icon">
-      <IconMoney/>
-    </div>
-    <div class="icon left-bottom-icon">
-      <IconMember/>
-    </div>
-    <div class="icon right-bottom-icon">
-      <IconStudent/>
-    </div>
+  <div class="content">
+    <component :is="currentPage" />
   </div>
-</div>
-
 </template>
 
 <style scoped>
-.Content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80vh;
-}
-
-.bg-text {
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  svg {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-  }
-  background: transparent;
-}
-
-.core {
-  width: 60%;
-  height: 100%;
-  svg {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-  }
-  background: transparent;
-}
-
-.icon-container {
-  position: absolute;
-  background: transparent;
-  width: 100%;
-  height: 100%;
-}
-
-.icon{
-  --svg-size: 20%;
-  --move-up: 28vh;
-  --move-left: 22vw;
-  position: absolute;
-  top: calc(50% - var(--move-up));
-  left: calc(50% - var(--move-left));
-  width: var(--svg-size);
-  height: var(--svg-size);
-  transform: translate(-50%, -50%);
-  svg {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-  }
-  background: transparent;
-}
-
-.left-top-icon{
-  --move-up: 25vh;
-  --move-left: 22vw;
-}
-.right-top-icon{
-  --move-up: 25vh;
-  --move-left: -22vw;
-}
-.right-bottom-icon{
-  --move-up: -26vh;
-  --move-left: -22vw;
-}
-.left-bottom-icon{
-  --move-up: -26vh;
-  --move-left: 22vw;
-}
 
 </style>
