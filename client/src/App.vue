@@ -24,7 +24,7 @@ export default {
 
   <main>
     <PageFirst />
-    <PageSecond/>
+    <PageSecond />
     <PageThird />
   </main>
 </template>

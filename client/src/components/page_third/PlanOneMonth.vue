@@ -75,6 +75,7 @@ const components = {
     font-size: 25px;
     font-weight: 700;
     padding: 5px 30px;
+    background: black;
     border: 5px solid #434343;
     border-radius: 10px;
   }

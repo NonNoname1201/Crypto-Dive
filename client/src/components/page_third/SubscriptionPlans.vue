@@ -62,13 +62,26 @@ const components = {
   border: 6px solid #434343;
   border-radius: 10px;
 }
+.description-item:nth-child(2) {
+  background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(219, 0, 255), rgb(36, 0, 255)) border-box;
+  border-radius: 10px;
+  border: 6px solid transparent;
+}
+
+
+.description-item:nth-child(3) {
+  background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 229, 0)) border-box;
+  border-radius: 10px;
+  border: 6px solid transparent;
+}
+
 
 .description-item {
   flex: 1;
   margin: 0 3vw 3vw 3vw;
   color: #fff;
-  min-width: 250px;
-  max-width: 350px;
-  height: 70vh;
+  min-width: 400px;
+  max-width: 450px;
+  height: 500px;
 }
 </style>

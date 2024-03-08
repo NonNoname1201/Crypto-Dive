@@ -8,7 +8,7 @@ const components = {
 </script>
 
 <template>
-  <div class="Page-third">
+  <div class="Page-third page">
     <Plans />
   </div>
 </template>

@@ -42,25 +42,12 @@ const components = {
 }
 
 .entry-button:hover {
-  background: linear-gradient(270deg, #7000FF 0%, #0075FF 49%, #33FF00 100%);
-  border: 0;
-  position: relative;
+  background: linear-gradient(black, black) padding-box, linear-gradient(270deg, #7000FF 0%, #0075FF 49%, #33FF00 100%) border-box;
   border-radius: 10px;
-  z-index: 1;
+  border: 4px solid transparent;
 }
 
-.entry-button:hover:before {
-  content: "";
-  display: block;
-  height: 32px;
-  width: 142px;
-  background: black;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 6px;
-  z-index: -1;
-}
+
 .first-page {
   h1 {
     font-size: 50px;
