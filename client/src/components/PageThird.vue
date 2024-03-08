@@ -1,16 +1,16 @@
 <script setup>
 import Plans from "@/components/page_third/SubscriptionPlans.vue";
-import { defineComponent } from 'vue';
+import {defineComponent} from 'vue';
 
 const components = {
-  Plans,
+    Plans,
 };
 </script>
 
 <template>
-  <div class="Page-third page">
-    <Plans />
-  </div>
+    <div class="Page-third page">
+        <Plans/>
+    </div>
 </template>
 
 <style scoped>
