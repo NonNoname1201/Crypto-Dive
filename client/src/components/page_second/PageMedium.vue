@@ -1,9 +1,9 @@
 <script setup>
 import SkeletonMedium from "@/components/icons/page_second/medium/SkeletonMedium.vue";
-import IconMemberThin from "@/components/icons/page_second/thin/IconMemberThin.vue";
-import IconStudentThin from "@/components/icons/page_second/thin/IconStudentThin.vue";
-import IconMoneyThin from "@/components/icons/page_second/thin/IconMoneyThin.vue";
-import IconNewsThin from "@/components/icons/page_second/thin/IconNewsThin.vue";
+import IconMemberThin from "@/components/icons/page_second/thin/IconThinMember.vue";
+import IconStudentThin from "@/components/icons/page_second/thin/IconThinStudent.vue";
+import IconMoneyThin from "@/components/icons/page_second/thin/IconThinMoney.vue";
+import IconNewsThin from "@/components/icons/page_second/thin/IconThinNews.vue";
 </script>
 
 <template>
@@ -11,20 +11,46 @@ import IconNewsThin from "@/components/icons/page_second/thin/IconNewsThin.vue";
     <div class="skeleton-medium">
       <SkeletonMedium/>
     </div>
-    <div class="icon-container-medium" ref="iconContainer">
-      <div class="icon-medium icon-news-medium">
-        <IconNewsThin/>
-      </div>
-      <div class="icon-medium icon-money-medium">
-        <IconMoneyThin/>
-      </div>
-      <div class="icon-medium icon-member-medium">
-        <IconMemberThin/>
-      </div>
-      <div class="icon-medium icon-student-medium">
-        <IconStudentThin/>
-      </div>
-    </div>
+<!--    <div class="icon-container-medium">-->
+<!--      <div class="sub-container-icon">-->
+<!--        <div class="sub-sub-container-icon">-->
+<!--          <div class="icon-medium icon-news-medium">-->
+<!--            <IconNewsThin/>-->
+<!--          </div>-->
+<!--          <div class="icon-medium icon-money-medium">-->
+<!--            <IconMoneyThin/>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="sub-sub-container-icon">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="sub-container-icon">-->
+<!--        <div class="sub-sub-container-icon">-->
+<!--        </div>-->
+<!--        <div class="sub-sub-container-icon">-->
+<!--          <div class="icon-medium icon-member-medium">-->
+<!--            <IconMemberThin/>-->
+<!--          </div>-->
+<!--          <div class="icon-medium icon-student-medium">-->
+<!--            <IconStudentThin/>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="icon-container-medium" ref="iconContainer">-->
+<!--      <div class="icon-medium icon-news-medium">-->
+<!--        <IconNewsThin/>-->
+<!--      </div>-->
+<!--      <div class="icon-medium icon-money-medium">-->
+<!--        <IconMoneyThin/>-->
+<!--      </div>-->
+<!--      <div class="icon-medium icon-member-medium">-->
+<!--        <IconMemberThin/>-->
+<!--      </div>-->
+<!--      <div class="icon-medium icon-student-medium">-->
+<!--        <IconStudentThin/>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -53,19 +79,36 @@ import IconNewsThin from "@/components/icons/page_second/thin/IconNewsThin.vue";
 }
 
 .icon-container-medium {
-  background: transparent;
   position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  flex-grow: 1;
+}
+
+.sub-container-icon {
+  background: transparent;
+  width : 35.7vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  height: 100%;
+}
 
+.sub-sub-container-icon {
+  background: transparent;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .icon-medium {
-  position: ABSOLUTE;
+  position: absolute;
 
   svg {
     width: 100%;
@@ -80,31 +123,31 @@ import IconNewsThin from "@/components/icons/page_second/thin/IconNewsThin.vue";
   --svg-size: 50%;
   width: var(--svg-size);
   height: var(--svg-size);
-  top: 0.7%;
-  left: 1.5vw;
+  //top: 0.7%;
+  //left: 1.5vw;
 }
 
 .icon-money-medium {
   --svg-size: 60%;
   width: var(--svg-size);
   height: var(--svg-size);
-  top: 11%;
-  left: -0.5vw;
+  //top: 11%;
+  //left: -0.5vw;
 }
 
 .icon-member-medium {
   --svg-size: 43%;
   width: var(--svg-size);
   height: var(--svg-size);
-  bottom: 22%;
-  right: 3.5vw;
+  //bottom: 22%;
+  //right: 3.5vw;
 }
 
 .icon-student-medium {
   --svg-size: 57%;
   width: var(--svg-size);
   height: var(--svg-size);
-  bottom: -2%;
-  right: 1vw;
+  //bottom: -2%;
+  //right: 1vw;
 }
 </style>
