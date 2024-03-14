@@ -12,7 +12,6 @@ import Content from "@/components/page_second/Content.vue";
 
 <style scoped>
 .Page-second {
-  max-height: 100vh;
   min-height: 100vh;
 }
 
