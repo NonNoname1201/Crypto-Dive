@@ -77,6 +77,7 @@ import IconStarCenter from "@/components/icons/page_second/IconStarCenter.vue";
     margin: 23px;
     padding: 20px 120px 20px 20px;
 
+    background: rgba(0, 0, 0, 0.8);
     border: 4px solid #51ff81;
     border-radius: 30px;
     overflow: hidden;
@@ -105,6 +106,12 @@ p {
 
 @media (max-width: 1131.5px) {
     .iconCenter {
+        display: none;
+    }
+}
+
+@media (min-width: 1577px) {
+    .iconCenter{
         display: none;
     }
 }

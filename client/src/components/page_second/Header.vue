@@ -33,7 +33,7 @@ import IconStarFilled from "@/components/icons/page_second/IconStarHeader.vue";
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.9);
 
     padding: 16px 34px;
     border: 4px solid #51ff81;
