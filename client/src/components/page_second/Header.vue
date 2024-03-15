@@ -1,29 +1,44 @@
 <script setup>
-
+import IconStarFilled from "@/components/icons/page_second/IconStarHeader.vue";
 </script>
 
 <template>
-  <div class="header">
-      <p class="pageName" ref="pageName">Nasz ekosystem</p>
-  </div>
+    <div class="header">
+        <IconStarFilled class="IconStarFilled"/>
+        <p class="pageName" ref="pageName">Nasz ekosystem</p>
+        <IconStarFilled class="IconStarFilled"/>
+    </div>
 </template>
 
 <style scoped>
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+}
+
+.IconStarFilled {
+    margin: 0 32px;
+    width: 38px;
+    height: 38px;
+
+    filter: drop-shadow(0 0 30px #FFF);
+
 }
 
 .pageName {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 61px;
-  padding-bottom: 14px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
 
-  background: linear-gradient(black, black) padding-box, linear-gradient(270deg, #BD00FF 0%, #0047FF 53%, #31FA0B 100%) border-box;
-  border-bottom: 6px solid transparent;
+    padding: 16px 34px;
+    border: 4px solid #51ff81;
+    border-radius: 19px;
+
+    text-shadow: 0 -10px 100px #FFF;
 }
-
 </style>

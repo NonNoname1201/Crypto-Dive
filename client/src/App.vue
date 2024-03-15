@@ -1,41 +1,27 @@
 <script setup>
+import {onMounted} from 'vue';
 import PageFirst from '@/components/PageFirst.vue';
 import PageSecond from '@/components/PageSecond.vue';
 import PageThird from '@/components/PageThird.vue';
+import PageFourth from "@/components/PageFourth.vue";
 
-</script>
-
-<script>
-export default {
-  data() {
-    return {
-      title: 'Crypto Dive'
-    }
-  },
-  mounted() {
-    document.title = this.title;
-  }
-}
+onMounted(() => {
+    document.title = "Crypto Dive";
+});
 </script>
 
 <template>
-  <header>
-  </header>
-
-  <main>
-    <PageFirst />
-    <PageSecond />
-    <PageThird />
-  </main>
+    <main>
+        <PageFirst/>
+        <PageSecond/>
+        <PageThird/>
+        <PageFourth/>
+    </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+main {
+    background-image: url("./assets/tile.png");
+    background-repeat: repeat;
 }
 </style>
