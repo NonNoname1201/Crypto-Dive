@@ -20,8 +20,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-main {
-    background-image: url("./assets/tile.png");
-    background-repeat: repeat;
-}
+
 </style>
