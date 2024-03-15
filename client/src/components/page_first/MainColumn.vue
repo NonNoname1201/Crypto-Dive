@@ -40,7 +40,7 @@ const components = {
 <style scoped>
 
 .entry-button {
-    width: 150px;
+    width: 170px;
     height: 40px;
     border: 4px solid white;
     background-color: #000000;
@@ -73,7 +73,7 @@ const components = {
     }
 
     .star {
-        height: 30px;
+        height: clamp(20px, 4vh, 30px);
         background: transparent;
     }
 

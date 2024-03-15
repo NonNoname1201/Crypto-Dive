@@ -11,12 +11,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <main>
-        <PageFirst/>
-        <PageSecond/>
-        <PageThird/>
-        <PageFourth/>
-    </main>
+    <PageFirst/>
+    <PageSecond/>
+    <PageThird/>
+    <PageFourth/>
 </template>
 
 <style scoped>
