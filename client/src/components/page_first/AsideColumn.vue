@@ -1,28 +1,40 @@
 <script setup>
-import Planet from '../icons/page_first/IconPlanet.vue';
-import { defineComponent } from 'vue';
+import IconBigLogo from '../icons/page_first/IconBigLogo.vue';
+import {defineComponent} from 'vue';
 
 const components = {
-  Planet,
+    IconBigLogo,
 };
 </script>
 
 <template>
-  <section class="aside-first-page">
-    <Planet />
-  </section>
+    <section class="aside-first-page">
+        <IconBigLogo/>
+        <img src="../icons/page_first/GreenLight.png" alt="GreenLight" class="green-light">
+    </section>
 </template>
 
 <style scoped>
 .aside-first-page {
-  height: 100vh;
-
-  svg {
     height: 100vh;
-  }
-  margin-right: -200px;
-  position: absolute;
-  right: 0;
-  z-index: 0;
+    display: flex;
+    align-items: center;
+
+
+    svg {
+        height: 50vh;
+        width: auto;
+        margin-right: 7vw;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    position: absolute;
+    right: 0;
+    z-index: 0;
 }
 </style>
