@@ -50,6 +50,7 @@ const components = {
     color: white;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .entry-button:hover {
