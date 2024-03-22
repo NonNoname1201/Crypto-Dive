@@ -52,38 +52,71 @@ const components = {
 }
 
 .description-container {
+    padding-left: 3vw;
+    padding-right: 3vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 3vw;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
+    min-height: 80vh;
 }
 
 .description-item:nth-child(1) {
-    border: 6px solid #434343;
-    border-radius: 10px;
+    border: 10px solid #434343;
+    border-radius: 25px;
+    box-shadow: none;
+    transition: transform 0.3s, box-shadow 0.8s 0.3s;
+}
+
+.description-item:nth-child(1):hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 40px 15px #FFFFFF80;
 }
 
 .description-item:nth-child(2) {
     background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(219, 0, 255), rgb(36, 0, 255)) border-box;
-    border-radius: 10px;
-    border: 6px solid transparent;
+    border-radius: 25px;
+    border: 10px solid transparent;
+    box-shadow: none;
+    transition: transform 0.3s, box-shadow 0.8s 0.3s;
+}
+
+.description-item:nth-child(2):hover {
+    transform: scale(1.01);
+    box-shadow:
+        -15px -15px 40px rgba(94, 0, 255, 0.4),
+        15px -15px 40px rgba(28, 0, 255, 0.4),
+        15px 15px 40px rgba(120, 0, 255, 0.4),
+        -15px 15px 40px rgba(219, 0, 255, 0.4);
 }
 
 
 .description-item:nth-child(3) {
     background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 229, 0)) border-box;
-    border-radius: 10px;
-    border: 6px solid transparent;
+    border-radius: 25px;
+    border: 10px solid transparent;
+    box-shadow: none;
+    transition: transform 0.3s, box-shadow 0.8s 0.3s;
+}
+
+.description-item:nth-child(3):hover {
+    transform: scale(1.01);
+    box-shadow:
+        -15px -15px 40px rgba(255, 255, 130, 0.4),
+        15px -15px 40px rgba(255, 225, 20, 0.4),
+        15px 15px 40px rgba(255, 255, 130, 0.4),
+        -15px 15px 40px rgba(255, 255, 255, 0.4);
 }
 
 
 .description-item {
     flex: 1;
-    margin: 0 3vw 3vw 3vw;
+
     color: #fff;
-    min-width: 400px;
-    max-width: 450px;
+    min-width: 360px;
+    max-width: 400px;
     height: 500px;
 }
 </style>

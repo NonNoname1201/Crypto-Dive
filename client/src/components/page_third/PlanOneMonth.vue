@@ -1,6 +1,6 @@
 <script setup>
 import GreyStar from "@/components/icons/page_third/IconGreyStar.vue";
-import {defineComponent} from 'vue';
+import IconConfirm from "@/components/icons/page_third/IconConfirm.vue";
 
 const components = {
     GreyStar,
@@ -23,8 +23,11 @@ const components = {
             </ul>
         </div>
         <div class="price-section">
-            <p class="price">199 ZŁ</p>
-            <button class="button-style"><a>Kupić</a></button>
+            <p class="price">199 ZŁ<span class="small-letters">/mies</span></p>
+            <button class="button-style">
+                <IconConfirm/>
+                <a>Kupić</a>
+            </button>
         </div>
     </div>
 </template>
@@ -44,8 +47,8 @@ const components = {
 }
 
 .description {
-    border-top: 3px solid #434343;
-    border-bottom: 3px solid #434343;
+    border-top: 6px solid #434343;
+    border-bottom: 6px solid #434343;
     font-weight: 500;
     font-size: 17px;
     height: 55%;
@@ -70,17 +73,33 @@ const components = {
     align-items: center;
 
     .price {
+        font-family: Inter, sans-serif;
         font-size: 25px;
         font-weight: 800;
+        .small-letters {
+            font-size: 17px;
+        }
     }
 
     .button-style {
         font-size: 25px;
         font-weight: 700;
-        padding: 5px 30px;
+        padding: 5px 20px 5px 10px;
         background: black;
         border: 5px solid #434343;
-        border-radius: 10px;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .button-style:hover {
+        transform: scale(1.01);
     }
 }
 </style>
