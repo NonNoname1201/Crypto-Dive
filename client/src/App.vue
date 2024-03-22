@@ -4,6 +4,7 @@ import PageFirst from '@/components/PageFirst.vue';
 import PageSecond from '@/components/PageSecond.vue';
 import PageThird from '@/components/PageThird.vue';
 import PageFourth from "@/components/PageFourth.vue";
+import Foreground from "@/components/Foreground.vue";
 
 onMounted(() => {
     document.title = "Crypto Dive";
@@ -11,6 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
+    <Foreground/>
     <PageFirst/>
     <PageSecond/>
     <PageThird/>
