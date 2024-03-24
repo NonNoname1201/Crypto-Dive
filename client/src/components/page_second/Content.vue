@@ -70,7 +70,7 @@ import IconStarCenter from "@/components/icons/page_second/IconStarCenter.vue";
     flex: 1;
     max-width: 560px;
     min-width: 400px;
-    min-height: 220px;
+    min-height: 16rem;
     width: 40%;
 
     position: relative;
