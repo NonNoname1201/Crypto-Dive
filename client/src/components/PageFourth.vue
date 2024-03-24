@@ -1,9 +1,7 @@
 <script setup>
 
 import Header from "@/components/page_fourth/Header.vue";
-import MemberCardPavel from "@/components/page_fourth/MemberCardPavel.vue";
-import MemberCardVladyslav from "@/components/page_fourth/MemberCardVladyslav.vue";
-import MemberCardMaksim from "@/components/page_fourth/MemberCardMaksim.vue";
+import MemberCard from "@/components/page_fourth/MemberCard.vue";
 </script>
 
 <template>
@@ -12,15 +10,27 @@ import MemberCardMaksim from "@/components/page_fourth/MemberCardMaksim.vue";
             <Header/>
         </div>
         <div class="team">
-            <div class="teamMember">
-                <MemberCardPavel/>
-            </div>
-            <div class="teamMember">
-                <MemberCardVladyslav/>
-            </div>
-            <div class="teamMember">
-                <MemberCardMaksim/>
-            </div>
+            <MemberCard
+                name="Pavel Berniak"
+                position="Założyciel Crypto Dive"
+                photoUrl="../src/assets/photoPavel.png"
+                instagramUrl="https://instagram.com/pavelberniak"
+                telegramUrl="https://t.me/pavelberniak"
+            />
+            <MemberCard
+                name="Vladyslav Zaker"
+                position="Redaktor i resercher"
+                photoUrl="../src/assets/photoVladyslav.png"
+                instagramUrl="https://instagram.com/vladyslavzaker"
+                telegramUrl="https://t.me/vladyslavzaker"
+            />
+            <MemberCard
+                name="Maksim Slysh"
+                position="Content manager"
+                photoUrl="../src/assets/photoMaksim.png"
+                instagramUrl="https://instagram.com/maksim"
+                telegramUrl="https://t.me/maksim"
+            />
         </div>
     </div>
 </template>
@@ -33,21 +43,12 @@ import MemberCardMaksim from "@/components/page_fourth/MemberCardMaksim.vue";
 .team {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 3vw;
     justify-content: space-around;
-    align-items: center;
-    margin: 0 128px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 50px 128px 0 128px;
     padding-bottom: 40px;
-}
-
-.teamMember {
-    margin: 0 16px 32px 16px;
-    transition: 0.3s;
-}
-
-.teamMember:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
 }
 
 </style>

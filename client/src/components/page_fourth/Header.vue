@@ -1,63 +1,44 @@
 <script setup>
-
-import IconArrowLeft from "@/components/icons/page_fourth/IconArrowLeft.vue";
+import IconStarFilled from "@/components/icons/page_second/IconStarHeader.vue";
 </script>
 
 <template>
     <div class="header">
-        <div class="IconArrowLeft arrow">
-            <IconArrowLeft/>
-        </div>
+        <IconStarFilled class="IconStarFilled"/>
         <p class="pageName" ref="pageName">Nasz zespół</p>
-        <div class="IconArrowRight arrow">
-            <IconArrowLeft/>
-        </div>
+        <IconStarFilled class="IconStarFilled"/>
     </div>
 </template>
 
 <style scoped>
 .header {
-    position: relative;
-    margin: 30px 128px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    padding: 60px 0 20px 0;
 }
 
-@media (min-width: 630px) {
-    .pageName {
-        min-width: 300px;
-    }
-}
+.IconStarFilled {
+    margin: 0 32px;
+    width: 38px;
+    height: 38px;
 
-@media (max-width: 630px) {
-    .header {
-        margin: 30px 16px;
-    }
+    filter: drop-shadow(0 0 30px #FFF);
 
-    .arrow {
-        display: none;
-    }
 }
 
 .pageName {
-    flex: 1;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
-    margin: 32px;
+    background: rgba(0, 0, 0, 0.9);
+
+    padding: 16px 34px;
+    border: 4px solid #51ff81;
+    border-radius: 19px;
+
     text-shadow: 0 -10px 100px #FFF;
-}
-
-.IconArrowLeft {
-    flex-grow: 1;
-    overflow: hidden;
-}
-
-.IconArrowRight {
-    flex-grow: 1;
-    overflow: hidden;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 </style>
