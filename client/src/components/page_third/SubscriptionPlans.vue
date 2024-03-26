@@ -67,6 +67,7 @@ const components = {
     border: 10px solid #434343;
     border-radius: 25px;
     box-shadow: none;
+    background-color: #181818;
     transition: transform 0.3s, box-shadow 0.8s 0.3s;
 }
 
@@ -76,7 +77,7 @@ const components = {
 }
 
 .description-item:nth-child(2) {
-    background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(219, 0, 255), rgb(36, 0, 255)) border-box;
+    background: linear-gradient(#181818, #181818) padding-box, linear-gradient(45deg, rgb(219, 0, 255), rgb(36, 0, 255)) border-box;
     border-radius: 25px;
     border: 10px solid transparent;
     box-shadow: none;
@@ -94,7 +95,7 @@ const components = {
 
 
 .description-item:nth-child(3) {
-    background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 229, 0)) border-box;
+    background: linear-gradient(#181818, #181818) padding-box, linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 229, 0)) border-box;
     border-radius: 25px;
     border: 10px solid transparent;
     box-shadow: none;

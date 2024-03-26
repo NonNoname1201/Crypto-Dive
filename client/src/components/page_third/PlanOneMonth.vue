@@ -100,6 +100,7 @@ const components = {
 
     .button-style:hover {
         transform: scale(1.01);
+
     }
 }
 </style>

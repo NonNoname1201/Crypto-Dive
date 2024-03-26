@@ -90,11 +90,12 @@ import IconConfirm from "@/components/icons/page_third/IconConfirm.vue";
         align-items: center;
         gap: 10px;
         cursor: pointer;
-        transition: transform 0.3s;
+        transition: transform 0.3s, background 1s;
     }
 
     .button-style:hover {
         transform: scale(1.015);
+        background: linear-gradient(black, black) padding-box, linear-gradient(45deg, rgb(240, 0, 255), rgb(0, 102, 255)) border-box;
     }
 }
 </style>
