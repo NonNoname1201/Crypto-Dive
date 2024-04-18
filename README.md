@@ -8,8 +8,9 @@ Crypto Dive ecosystem offers a comprehensive range of cryptocurrency-related con
 
 1. Download the repository.
 2. Open `./client` folder.
-3. Run the `npm run dev` command.
+3. Install npm (if needed).
+4. Run the `npm run dev` command.
    ```
    npm run dev
    ```
-4. Open in browser `http://localhost:5173`.
+5. Open in browser `http://localhost:5173`.
